@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.ext</groupId>
 	<artifactId>spring-ext</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.20</version>
 	<packaging>jar</packaging>
 	<url>https://github.com/spring-ext/spring-ext</url>
 	<name>spring-ext</name>
@@ -194,6 +194,13 @@
 			<version>3.11</version>
 		</dependency>
 
+		<!-- xml -->
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>1.1.6</version>
+		</dependency>
+
 		<!-- search -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -226,11 +233,13 @@
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 			<version>2.7.0</version>
+			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongo-java-driver</artifactId>
 			<version>3.0.0</version>
+			<optional>true</optional>
 		</dependency>
 
 		<dependency>
@@ -249,5 +258,46 @@
 		<!-- </dependency> -->
 
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.wvengen</groupId>
+				<artifactId>proguard-maven-plugin</artifactId>
+				<version>2.0.10</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>proguard</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<proguardVersion>5.2.1</proguardVersion>
+					<options>
+						<option>-dontoptimize</option>
+						<option>-keepattributes *Annotation*</option>
+						<option>-keepattributes Signature</option>
+						<option>-keepattributes InnerClasses</option>
+						<option>-keepclassmembers class * { @**.* *; }</option>
+						<option>-keep public class * { public protected *; }</option>
+					</options>
+					<libs>
+						<lib>${java.home}/lib/rt.jar</lib>
+						<lib>${java.home}/lib/jsse.jar</lib>
+						<lib>${java.home}/lib/jce.jar</lib>
+					</libs>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>net.sf.proguard</groupId>
+						<artifactId>proguard-base</artifactId>
+						<version>5.2.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
