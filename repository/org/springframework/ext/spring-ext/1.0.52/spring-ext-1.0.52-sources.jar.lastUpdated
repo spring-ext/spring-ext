@@ -1,0 +1,10 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Nov 27 18:26:29 CST 2015
+http\://repo.springsource.org/release/.lastUpdated=1448619981984
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1448619989784
+https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1448619985454
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1448619987729
+https\://repository.jboss.org/nexus/content/groups/public/.error=
+https\://repo.maven.apache.org/maven2/.error=
+http\://repo.springsource.org/release/.error=
