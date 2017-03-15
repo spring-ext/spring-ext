@@ -3,7 +3,7 @@
 	<groupId>org.springframework.ext</groupId>
 	<artifactId>spring-ext</artifactId>
 	<versioning>
-		<release>1.0.60</release>
+		<release>1.0.61</release>
 		<versions>
 		    <version>1.0.6</version>
 			<version>1.0.21</version>
@@ -44,7 +44,8 @@
 			<version>1.0.58</version>
 			<version>1.0.59</version>
 			<version>1.0.60</version>
+			<version>1.0.61</version>
 		</versions>
-		<lastUpdated>20151210100100</lastUpdated>
+		<lastUpdated>20170315112414</lastUpdated>
 	</versioning>
 </metadata>
