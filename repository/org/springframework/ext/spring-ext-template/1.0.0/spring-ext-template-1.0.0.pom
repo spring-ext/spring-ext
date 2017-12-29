@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.springframework.ext</groupId>
+	<artifactId>spring-ext-template</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+	<url>https://github.com/spring-ext/spring-ext</url>
+	<name>spring-ext-template</name>
+	<description>spring extension for template</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<!-- test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- other -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.27-incubating</version>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>jdk.tools</groupId> -->
+		<!-- <artifactId>jdk.tools</artifactId> -->
+		<!-- <version>${java.version}</version> -->
+		<!-- <scope>system</scope> -->
+		<!-- <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath> -->
+		<!-- </dependency> -->
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20.1</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.github.wvengen</groupId>
+				<artifactId>proguard-maven-plugin</artifactId>
+				<version>2.0.14</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>proguard</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<proguardVersion>5.3.3</proguardVersion>
+					<options>
+						<option>-dontoptimize</option>
+						<!-- 避免混淆注解 -->
+						<option>-keepattributes *Annotation*</option>
+						<!-- 避免混淆泛型 -->
+						<option>-keepattributes Signature</option>
+						<!-- 避免混淆内部类 -->
+						<option>-keepattributes InnerClasses</option>
+						<!-- 避免混淆带注解的成员 -->
+						<option>-keepclassmembers class * { @**.* *; }</option>
+						<!-- 避免混淆公开的成员 -->
+						<option>-keep public class * { public protected *; }</option>
+						<!-- 去掉log4j警告 -->
+						<option>-dontwarn org.apache.logging.log4j.**</option>
+					</options>
+					<!-- log4j-api 使用了JDK9 无法识别 -->
+					<exclusions>
+						<exclusion>
+							<groupId>org.apache.logging.log4j</groupId>
+							<artifactId>log4j-api</artifactId>
+						</exclusion>
+					</exclusions>
+					<libs>
+						<lib>${java.home}/lib/rt.jar</lib>
+						<lib>${java.home}/lib/jsse.jar</lib>
+						<lib>${java.home}/lib/jce.jar</lib>
+					</libs>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>net.sf.proguard</groupId>
+						<artifactId>proguard-base</artifactId>
+						<version>5.3.3</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
