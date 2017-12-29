@@ -1,4 +1,8 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+<<<<<<< HEAD
 #Fri Dec 29 19:16:59 CST 2017
+=======
+#Fri Dec 29 19:11:09 CST 2017
+>>>>>>> branch 'master' of https://github.com/spring-ext/spring-ext.git
 spring-ext-office-1.0.0.pom>=
 spring-ext-office-1.0.0.jar>=
