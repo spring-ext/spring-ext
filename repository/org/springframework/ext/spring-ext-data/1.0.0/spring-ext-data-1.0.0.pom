@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.ext</groupId>
-	<artifactId>spring-ext-template</artifactId>
+	<artifactId>spring-ext-data</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<url>https://github.com/spring-ext/spring-ext</url>
-	<name>spring-ext-template</name>
-	<description>spring extension for template</description>
+	<name>spring-ext-data</name>
+	<description>spring extension for data</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,11 +23,29 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- freemarker -->
+		<!-- hibernate -->
 		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.27-incubating</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.12.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.2.12.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.6.Final</version>
+		</dependency>
+
+		<!-- hibernate-search -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-search-orm</artifactId>
+			<version>5.8.2.Final</version>
+			<optional>true</optional>
 		</dependency>
 
 	</dependencies>

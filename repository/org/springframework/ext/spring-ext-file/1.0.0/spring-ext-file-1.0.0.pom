@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.ext</groupId>
-	<artifactId>spring-ext-template</artifactId>
+	<artifactId>spring-ext-file</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<url>https://github.com/spring-ext/spring-ext</url>
-	<name>spring-ext-template</name>
-	<description>spring extension for template</description>
+	<name>spring-ext-file</name>
+	<description>spring extension for file</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,11 +23,49 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- freemarker -->
+		<!-- spring-ext-util -->
 		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.27-incubating</version>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-util</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!-- spring-ext-log4j2 -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-log4j2</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!-- commons -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.3</version>
+		</dependency>
+
+		<!-- spring-ext-http -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-http</artifactId>
+			<version>1.0.0</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- spring-ext-mongodb -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-mongodb</artifactId>
+			<version>1.0.0</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- spring-ext-hdfs -->
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>3.0.0</version>
+			<optional>true</optional>
 		</dependency>
 
 	</dependencies>

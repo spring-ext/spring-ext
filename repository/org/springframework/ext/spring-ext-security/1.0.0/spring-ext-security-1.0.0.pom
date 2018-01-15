@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.ext</groupId>
-	<artifactId>spring-ext-template</artifactId>
+	<artifactId>spring-ext-security</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<url>https://github.com/spring-ext/spring-ext</url>
-	<name>spring-ext-template</name>
-	<description>spring extension for template</description>
+	<name>spring-ext-security</name>
+	<description>spring extension for security</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,13 +21,6 @@
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 			<scope>test</scope>
-		</dependency>
-
-		<!-- freemarker -->
-		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.27-incubating</version>
 		</dependency>
 
 	</dependencies>

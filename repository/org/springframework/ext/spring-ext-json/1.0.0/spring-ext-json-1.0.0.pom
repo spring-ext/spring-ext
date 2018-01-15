@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.ext</groupId>
-	<artifactId>spring-ext-template</artifactId>
+	<artifactId>spring-ext-json</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<url>https://github.com/spring-ext/spring-ext</url>
-	<name>spring-ext-template</name>
-	<description>spring extension for template</description>
+	<name>spring-ext-json</name>
+	<description>spring extension for json</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,12 +22,29 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- freemarker -->
+		<!-- spring-ext-util -->
 		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.27-incubating</version>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-util</artifactId>
+			<version>1.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.9.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.9.3</version>
 		</dependency>
 
 	</dependencies>

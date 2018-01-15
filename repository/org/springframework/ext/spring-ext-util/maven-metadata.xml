@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>org.springframework.ext</groupId>
-  <artifactId>spring-ext-office</artifactId>
+  <artifactId>spring-ext-util</artifactId>
   <versioning>
     <release>1.0.0</release>
     <versions>
       <version>1.0.0</version>
     </versions>
-    <lastUpdated>20171229111659</lastUpdated>
+    <lastUpdated>20180113124404</lastUpdated>
   </versioning>
 </metadata>
