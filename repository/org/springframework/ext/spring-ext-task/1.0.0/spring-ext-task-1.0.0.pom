@@ -29,6 +29,20 @@
 			<version>1.0.0</version>
 		</dependency>
 
+		<!-- quartz -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.3.0</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz-jobs</artifactId>
+			<version>2.3.0</version>
+			<optional>true</optional>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -37,8 +51,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>9</source>
+					<target>9</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -49,9 +63,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.github.wvengen</groupId>
+				<groupId>com.github.dingxin</groupId>
 				<artifactId>proguard-maven-plugin</artifactId>
-				<version>2.0.14</version>
+				<version>1.0.0</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -61,42 +75,10 @@
 					</execution>
 				</executions>
 				<configuration>
-					<proguardVersion>5.3.3</proguardVersion>
-					<options>
-						<option>-dontoptimize</option>
-						<!-- 避免混淆注解 -->
-						<option>-keepattributes *Annotation*</option>
-						<!-- 避免混淆泛型 -->
-						<option>-keepattributes Signature</option>
-						<!-- 避免混淆内部类 -->
-						<option>-keepattributes InnerClasses</option>
-						<!-- 避免混淆带注解的成员 -->
-						<option>-keepclassmembers class * { @**.* *; }</option>
-						<!-- 避免混淆公开的成员 -->
-						<option>-keep public class * { public protected *; }</option>
-						<!-- 去掉log4j警告 -->
-						<option>-dontwarn org.apache.logging.log4j.**</option>
-					</options>
-					<!-- log4j-api 使用了JDK9 无法识别 -->
-					<exclusions>
-						<exclusion>
-							<groupId>org.apache.logging.log4j</groupId>
-							<artifactId>log4j-api</artifactId>
-						</exclusion>
-					</exclusions>
 					<libs>
-						<lib>${java.home}/lib/rt.jar</lib>
-						<lib>${java.home}/lib/jsse.jar</lib>
-						<lib>${java.home}/lib/jce.jar</lib>
+						<lib>${java.home}/jmods/java.base.jmod(!**.jar;!module-info.class)</lib>
 					</libs>
 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>net.sf.proguard</groupId>
-						<artifactId>proguard-base</artifactId>
-						<version>5.3.3</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>

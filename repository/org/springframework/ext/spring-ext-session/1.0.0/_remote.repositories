@@ -1,4 +1,4 @@
-#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Wed Jan 17 18:39:17 CST 2018
-spring-ext-session-1.0.0.jar>=
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Feb 07 21:58:43 CST 2018
 spring-ext-session-1.0.0.pom>=
+spring-ext-session-1.0.0.jar>=

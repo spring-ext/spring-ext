@@ -134,6 +134,20 @@
 			<version>1.0.0</version>
 		</dependency>
 
+		<!-- spring-ext-mail -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-mail</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!-- spring-ext-oauth2 -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-oauth2</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 		<!-- spring-ext-cache -->
 		<dependency>
 			<groupId>org.springframework.ext</groupId>
@@ -148,13 +162,6 @@
 			<version>1.0.0</version>
 		</dependency>
 
-		<!-- spring-ext-oauth2 -->
-		<dependency>
-			<groupId>org.springframework.ext</groupId>
-			<artifactId>spring-ext-oauth2</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
 		<!-- spring-ext-mongodb -->
 		<dependency>
 			<groupId>org.springframework.ext</groupId>
@@ -162,10 +169,10 @@
 			<version>1.0.0</version>
 		</dependency>
 
-		<!-- spring-ext-mail -->
+		<!-- spring-ext-es -->
 		<dependency>
 			<groupId>org.springframework.ext</groupId>
-			<artifactId>spring-ext-mail</artifactId>
+			<artifactId>spring-ext-es</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 

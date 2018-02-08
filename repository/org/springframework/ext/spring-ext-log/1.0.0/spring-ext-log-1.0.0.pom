@@ -23,59 +23,18 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- spring-ext-log4j2 -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-log4j2</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 		<!-- spring-ext-util -->
 		<dependency>
 			<groupId>org.springframework.ext</groupId>
 			<artifactId>spring-ext-util</artifactId>
 			<version>1.0.0</version>
-		</dependency>
-
-		<!-- log -->
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-1.2-api</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-jcl</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-jul</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-slf4j-impl</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.25</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-web</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<!-- Async Loggers -->
-		<dependency>
-			<groupId>com.lmax</groupId>
-			<artifactId>disruptor</artifactId>
-			<version>3.3.7</version>
 		</dependency>
 
 		<!-- container -->
@@ -94,8 +53,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>9</source>
+					<target>9</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -106,9 +65,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.github.wvengen</groupId>
+				<groupId>com.github.dingxin</groupId>
 				<artifactId>proguard-maven-plugin</artifactId>
-				<version>2.0.14</version>
+				<version>1.0.0</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -118,42 +77,10 @@
 					</execution>
 				</executions>
 				<configuration>
-					<proguardVersion>5.3.3</proguardVersion>
-					<options>
-						<option>-dontoptimize</option>
-						<!-- 避免混淆注解 -->
-						<option>-keepattributes *Annotation*</option>
-						<!-- 避免混淆泛型 -->
-						<option>-keepattributes Signature</option>
-						<!-- 避免混淆内部类 -->
-						<option>-keepattributes InnerClasses</option>
-						<!-- 避免混淆带注解的成员 -->
-						<option>-keepclassmembers class * { @**.* *; }</option>
-						<!-- 避免混淆公开的成员 -->
-						<option>-keep public class * { public protected *; }</option>
-						<!-- 去掉log4j警告 -->
-						<option>-dontwarn org.apache.logging.log4j.**</option>
-					</options>
-					<!-- log4j-api 使用了JDK9 无法识别 -->
-					<exclusions>
-						<exclusion>
-							<groupId>org.apache.logging.log4j</groupId>
-							<artifactId>log4j-api</artifactId>
-						</exclusion>
-					</exclusions>
 					<libs>
-						<lib>${java.home}/lib/rt.jar</lib>
-						<lib>${java.home}/lib/jsse.jar</lib>
-						<lib>${java.home}/lib/jce.jar</lib>
+						<lib>${java.home}/jmods/java.base.jmod(!**.jar;!module-info.class)</lib>
 					</libs>
 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>net.sf.proguard</groupId>
-						<artifactId>proguard-base</artifactId>
-						<version>5.3.3</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
