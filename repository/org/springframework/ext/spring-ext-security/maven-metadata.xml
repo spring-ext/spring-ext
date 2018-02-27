@@ -3,10 +3,11 @@
   <groupId>org.springframework.ext</groupId>
   <artifactId>spring-ext-security</artifactId>
   <versioning>
-    <release>1.0.0</release>
+    <release>1.0.1</release>
     <versions>
       <version>1.0.0</version>
+      <version>1.0.1</version>
     </versions>
-    <lastUpdated>20180207135752</lastUpdated>
+    <lastUpdated>20180227032315</lastUpdated>
   </versioning>
 </metadata>
