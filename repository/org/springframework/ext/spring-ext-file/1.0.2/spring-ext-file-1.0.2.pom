@@ -26,6 +26,13 @@
 			<version>${project.version}</version>
 		</dependency>
 
+		<!-- spring-ext-exception -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-exception</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
 		<!-- spring-ext-http -->
 		<dependency>
 			<groupId>org.springframework.ext</groupId>

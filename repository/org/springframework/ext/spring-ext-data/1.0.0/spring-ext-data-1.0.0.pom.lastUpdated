@@ -1,8 +1,7 @@
 #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon Jan 08 01:05:30 CST 2018
-http\://repo.springsource.org/release/.lastUpdated=1515344724896
+#Mon Apr 02 11:13:33 CST 2018
 http\://maven.aliyun.com/nexus/content/groups/public/.error=
-https\://repo.spring.io/libs-milestone/.error=
-http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1515344730017
 http\://repo.springsource.org/release/.error=
-https\://repo.spring.io/libs-milestone/.lastUpdated=1515344726944
+http\://repo.springsource.org/release/.lastUpdated=1522638809326
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1522638808794
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1522638813441
