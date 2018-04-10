@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.ext</groupId>
+		<artifactId>spring-ext-parent</artifactId>
+		<version>1.0.4</version>
+	</parent>
+	<artifactId>spring-ext-websocket</artifactId>
+	<name>spring-ext-websocket</name>
+	<packaging>jar</packaging>
+
+	<dependencies>
+
+		<!-- spring-ext-spring -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-spring</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring websocket -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+			<version>5.0.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-messaging</artifactId>
+			<version>5.0.4.RELEASE</version>
+		</dependency>
+		<!-- Required by "stomp-broker-relay" -->
+		<dependency>
+			<groupId>io.projectreactor.ipc</groupId>
+			<artifactId>reactor-netty</artifactId>
+			<version>0.7.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-net</artifactId>
+			<version>2.0.8.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.22.Final</version>
+		</dependency>
+
+	</dependencies>
+
+</project>

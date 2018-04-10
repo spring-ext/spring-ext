@@ -1,9 +1,0 @@
-#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Fri Mar 30 16:21:58 CST 2018
-@default-jboss-repo-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1522398113885
-http\://maven.aliyun.com/nexus/content/groups/public/.error=
-http\://repo.springsource.org/release/.error=
-http\://repo.springsource.org/release/.lastUpdated=1522398103882
-https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact org.springframework.ext\:spring-ext-mongodb\:jar\:1.0.2 from/to jboss-repo (https\://repository.jboss.org/nexus/content/groups/public)\: connect timed out
-http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1522398103533
-https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1522398118893
