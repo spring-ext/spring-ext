@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.springframework.ext</groupId>
+	<artifactId>spring-ext-parent</artifactId>
+	<version>1.0.5</version>
+	<packaging>pom</packaging>
+	<url>https://github.com/spring-ext/spring-ext</url>
+	<name>spring-ext-parent</name>
+	<description>spring extension</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>9</source>
+					<target>9</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20.1</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>5.0.4.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>spring-ext</module>
+		<module>spring-ext-all</module>
+		<module>spring-ext-auth</module>
+		<module>spring-ext-cache</module>
+		<module>spring-ext-code</module>
+		<module>spring-ext-data</module>
+		<module>spring-ext-es</module>
+		<module>spring-ext-exception</module>
+		<module>spring-ext-file</module>
+		<module>spring-ext-http</module>
+		<module>spring-ext-json</module>
+		<module>spring-ext-kafka</module>
+		<module>spring-ext-log</module>
+		<module>spring-ext-log4j2</module>
+		<module>spring-ext-mail</module>
+		<module>spring-ext-mongodb</module>
+		<module>spring-ext-oauth2</module>
+		<module>spring-ext-office</module>
+		<module>spring-ext-redis</module>
+		<module>spring-ext-security</module>
+		<module>spring-ext-session</module>
+		<module>spring-ext-spring</module>
+		<module>spring-ext-task</module>
+		<module>spring-ext-template</module>
+		<module>spring-ext-test</module>
+		<module>spring-ext-util</module>
+		<module>spring-ext-web</module>
+		<module>spring-ext-websocket</module>
+	</modules>
+
+</project>
