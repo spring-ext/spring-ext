@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.ext</groupId>
+		<artifactId>spring-ext-parent</artifactId>
+		<version>1.0.6</version>
+	</parent>
+	<artifactId>spring-ext-code</artifactId>
+	<name>spring-ext-code</name>
+	<packaging>jar</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.dingxin</groupId>
+				<artifactId>proguard-maven-plugin</artifactId>
+				<version>1.0.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>proguard</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<libs>
+						<lib>${java.home}/jmods/java.base.jmod(!**.jar;!module-info.class)</lib>
+						<lib>${java.home}/jmods/java.desktop.jmod(!**.jar;!module-info.class)</lib>
+					</libs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- spring-ext-util -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-util</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-log4j2 -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-log4j2</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- JDT -->
+		<dependency>
+			<groupId>org.eclipse.jdt</groupId>
+			<artifactId>org.eclipse.jdt.core</artifactId>
+			<version>3.13.102</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>org.eclipse.osgi</artifactId>
+			<version>3.12.100</version>
+		</dependency>
+	</dependencies>
+
+</project>

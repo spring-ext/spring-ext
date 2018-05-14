@@ -35,14 +35,36 @@
 	</build>
 
 	<dependencies>
+		<!-- spring-ext-spring -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-spring</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- spring-ext-json -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-json</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- spring-ext-data -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-data</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
 		<!-- mongodb -->
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongodb-driver</artifactId>
-			<version>3.6.3</version>
+			<version>3.7.0</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>2.0.7.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 </project>

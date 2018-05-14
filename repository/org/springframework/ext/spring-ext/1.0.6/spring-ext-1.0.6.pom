@@ -1,0 +1,136 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.ext</groupId>
+		<artifactId>spring-ext-parent</artifactId>
+		<version>1.0.6</version>
+	</parent>
+	<artifactId>spring-ext</artifactId>
+	<name>spring-ext</name>
+	<packaging>jar</packaging>
+
+	<dependencies>
+
+		<!-- spring-ext-spring -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-spring</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-log4j2 -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-log4j2</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-util -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-util</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-json -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-json</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-data -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-data</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-jpa -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-jpa</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-template -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-template</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-office -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-office</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-cache -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-cache</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-security -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-security</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-auth -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-auth</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-task -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-task</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-exception -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-exception</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-http -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-http</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-web -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-web</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-log -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-log</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- spring-ext-file -->
+		<dependency>
+			<groupId>org.springframework.ext</groupId>
+			<artifactId>spring-ext-file</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+	</dependencies>
+
+</project>
