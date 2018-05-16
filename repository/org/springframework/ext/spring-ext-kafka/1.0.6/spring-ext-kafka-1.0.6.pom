@@ -36,31 +36,10 @@
 
 	<dependencies>
 
-		<!-- spring-ext-log4j2 -->
-		<dependency>
-			<groupId>org.springframework.ext</groupId>
-			<artifactId>spring-ext-log4j2</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-
 		<!-- spring-ext-spring -->
 		<dependency>
 			<groupId>org.springframework.ext</groupId>
 			<artifactId>spring-ext-spring</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-
-		<!-- spring-ext-util -->
-		<dependency>
-			<groupId>org.springframework.ext</groupId>
-			<artifactId>spring-ext-util</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-
-		<!-- spring-ext-log -->
-		<dependency>
-			<groupId>org.springframework.ext</groupId>
-			<artifactId>spring-ext-log</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
@@ -78,16 +57,7 @@
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
-			<version>2.1.5.RELEASE</version>
-			<optional>true</optional>
-		</dependency>
-
-		<!-- container -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.0</version>
-			<scope>provided</scope>
+			<version>2.1.6.RELEASE</version>
 		</dependency>
 
 	</dependencies>
