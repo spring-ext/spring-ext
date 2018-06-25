@@ -119,12 +119,12 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- container -->
+		<!-- servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>4.0.0</version>
-			<scope>provided</scope>
+			<optional>true</optional>
 		</dependency>
 
 	</dependencies>

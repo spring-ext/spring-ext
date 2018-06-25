@@ -43,12 +43,11 @@
 			<version>${project.version}</version>
 		</dependency>
 
-		<!-- spring-ext-log -->
+		<!-- spring-ext-log4j2 -->
 		<dependency>
 			<groupId>org.springframework.ext</groupId>
-			<artifactId>spring-ext-log</artifactId>
+			<artifactId>spring-ext-log4j2</artifactId>
 			<version>${project.version}</version>
-			<optional>true</optional>
 		</dependency>
 
 		<!-- spring-ext-spring -->

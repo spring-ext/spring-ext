@@ -78,11 +78,6 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>5.3.0.Final</version>
 		</dependency>
-		<dependency>
-			<groupId>org.hibernate.validator</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>6.0.10.Final</version>
-		</dependency>
 
 		<!-- hibernate-search -->
 		<dependency>
