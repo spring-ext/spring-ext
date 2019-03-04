@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jun 28 17:31:36 CST 2018
+spring-ext-log4j2-1.0.9.pom>=
+spring-ext-log4j2-1.0.9.jar>=

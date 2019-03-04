@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Apr 10 16:23:26 CST 2018
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://repo.springsource.org/release/.error=
+http\://repo.springsource.org/release/.lastUpdated=1523348566062
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1523348559709
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1523348606701

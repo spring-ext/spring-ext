@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jul 04 20:41:05 CST 2018
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.error=
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1530708059301
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1530708065717

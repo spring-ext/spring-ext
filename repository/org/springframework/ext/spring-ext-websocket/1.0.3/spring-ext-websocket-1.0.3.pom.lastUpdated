@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Apr 10 16:25:33 CST 2018
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.error=Could not transfer artifact org.springframework.ext\:spring-ext-websocket\:pom\:1.0.3 from/to spring-ext (https\://raw.github.com/spring-ext/spring-ext/master/repository)\: /Users/dingxin/.m2/repository/org/springframework/ext/spring-ext-websocket/1.0.3/aether-bf470f16-df54-424c-9a72-de2289bc9fff-spring-ext-websocket-1.0.3.pom-in-progress (No such file or directory)
+@default-spring-ext-https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1523348733243
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://repo.springsource.org/release/.error=
+http\://repo.springsource.org/release/.lastUpdated=1523348729644
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1523348729312

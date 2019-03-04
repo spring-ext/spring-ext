@@ -1,0 +1,12 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 13 17:01:51 CST 2018
+https\://repo.maven.apache.org/maven2/.lastUpdated=1544691711627
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.error=
+@default-jboss-repo-https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1523610694691
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://repo.springsource.org/release/.error=
+http\://repo.springsource.org/release/.lastUpdated=1523610674551
+https\://repo.maven.apache.org/maven2/.error=
+https\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact org.springframework.ext\:spring-ext\:pom\:1.0.59 from/to jboss-repo (https\://repository.jboss.org/nexus/content/groups/public)\: Connection reset
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1523610700527
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1523610697580
