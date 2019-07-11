@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jul 04 16:01:39 CST 2019
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.error=Could not transfer artifact org.springframework.ext\:spring-ext-mongodb\:pom\:unknown from/to spring-ext (https\://raw.github.com/spring-ext/spring-ext/master/repository)\: raw.github.com\: nodename nor servname provided, or not known
+@default-spring-ext-https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1562227297363
+https\://repo.maven.apache.org/maven2/.lastUpdated=1562227299063
+https\://repo.maven.apache.org/maven2/.error=
