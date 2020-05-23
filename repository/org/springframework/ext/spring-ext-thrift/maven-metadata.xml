@@ -3,12 +3,15 @@
   <groupId>org.springframework.ext</groupId>
   <artifactId>spring-ext-thrift</artifactId>
   <versioning>
-    <release>1.1.3</release>
+    <release>1.1.6</release>
     <versions>
       <version>1.1.1</version>
       <version>1.1.2</version>
       <version>1.1.3</version>
+      <version>1.1.4</version>
+      <version>1.1.5</version>
+      <version>1.1.6</version>
     </versions>
-    <lastUpdated>20191206072210</lastUpdated>
+    <lastUpdated>20200516084816</lastUpdated>
   </versioning>
 </metadata>

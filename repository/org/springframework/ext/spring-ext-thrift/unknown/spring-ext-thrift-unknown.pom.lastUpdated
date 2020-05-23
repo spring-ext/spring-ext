@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Dec 27 18:05:25 CST 2019
+http\://d48.mlamp.cn/maven/repository/maven-public/.lastUpdated=1577441124411
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.error=Could not transfer artifact org.springframework.ext\:spring-ext-thrift\:pom\:unknown from/to spring-ext (https\://raw.github.com/spring-ext/spring-ext/master/repository)\: Connect to raw.github.com\:443 [raw.github.com/151.101.228.133] failed\: Connection refused (Connection refused)
+@default-spring-ext-https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1577441124447
+https\://repo.maven.apache.org/maven2/.lastUpdated=1577441125245
+http\://d48.mlamp.cn/maven/repository/maven-public/.error=
+https\://repo.maven.apache.org/maven2/.error=
