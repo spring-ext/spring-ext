@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jun 15 20:44:51 CST 2020
+spring-ext-http-1.1.9.jar>=
+spring-ext-http-1.1.9.pom>=

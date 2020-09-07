@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jul 30 15:33:17 CST 2020
+spring-ext-kafka-1.1.11.pom>=
+spring-ext-kafka-1.1.11.jar>=

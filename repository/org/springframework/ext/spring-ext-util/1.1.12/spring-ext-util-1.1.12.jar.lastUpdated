@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 04 14:47:33 CST 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1596523619378
+https\://raw.github.com/spring-ext/spring-ext/master/repository/.error=Could not transfer artifact org.springframework.ext\:spring-ext-util\:jar\:1.1.12 from/to spring-ext (https\://raw.github.com/spring-ext/spring-ext/master/repository)\: Transfer failed for https\://raw.github.com/spring-ext/spring-ext/master/repository/org/springframework/ext/spring-ext-util/1.1.12/spring-ext-util-1.1.12.jar
+@default-spring-ext-https\://raw.github.com/spring-ext/spring-ext/master/repository/.lastUpdated=1596523653438
+https\://repo.maven.apache.org/maven2/.error=
